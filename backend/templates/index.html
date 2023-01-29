@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<link href="/Static/css/main.css" rel="stylesheet">
+
+
+</head>
+<body>
+	<div class="main-body">
+		<div class="header-text">
+			<h1 class="header-title">Global Root Dashboard</h1><br><small class="header-title-small"> Anorld Kigame| December  25,2022</small>
+
+		</div>
+		<div class="row">
+			<div class="dashboard-tittle"><h4 class="dashboard-main-text">Global Dashboard</h4></div>
+		</div>
+		<br>
+	<section class="db-tickest" id="db-tickets">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-6">
+					<div class="db-tickets-inner">
+						<div class="row">
+						<div class="db-tickets-progress">
+							<div class="col-md-4 nm-tickets">
+								<div class="inner">
+									<p>total ticktes</p>
+								    <p>234</p>
+								</div>
+							</div>
+							<div class="col-md-4 nm-tickets">
+								<div class="inner">
+									<p>Tickets moved from backlog to in progress:</p>
+								    <p>234</p>
+								</div>
+							</div>
+							<div class="col-md-4 nm-tickets">
+								<div class="inner">
+									<p>Closed tickets from backlog:s</p>
+								    <p>234</p>
+								</div>
+							</div>
+						</div>
+						</div>
+						<br>
+						<div class="row circular-progres">
+							<div class="col-md-12">
+								<div class="col-md-3 progress-div">
+									<div class="progress-circle ">
+										<span class="value">376</span>
+									</div>
+									<p class="text">tickets added to backlog</p>
+								</div>
+								<div class="col-md-3 progress-div">
+									<div class="progress-circle">
+										<span class="value">376</span>
+									</div>
+									<p class="text">tickets to do</p>
+								</div>
+								<div class="col-md-3 progress-div">
+									<div class="progress-circle">
+										<span class="value">376</span>
+									</div>
+									<p class="text">tickets progress</p>
+								</div>
+								<div class="col-md-3 progress-div">
+									<div class="progress-circle">
+										<span class="value">376</span>
+									</div>
+									<p class="text">tickets completed</p>
+								</div>
+							</div>
+
+
+						</div>
+						<div class="row progress-table">
+
+							<div class="col-sm-6">
+								<table class="table table-borderless">
+									<thead>
+									<tr>
+									 <td colspan="2" class="table-head">Backlog ticket rating breakdown</td>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td scope="row">Hard</td>
+										<td>
+											<div class="hard-progress">
+												<div class="hard-progress-done" >
+		
+												</div>
+											  </div>
+										</td>
+										<td id="data">34</td>
+									</tr>
+									<tr>
+										<td scope="row">Average</td>
+										<td>
+											<div class="average-progress">
+												<div class="average-progress-done"></div>
+											</div>
+										</td>
+										<td>48</td>
+									</tr>
+									<tr>
+										<td scope="row">Easy</td>
+										<td>
+											<div class="easy-progress">
+												<div class="easy-progress-done"></div>
+											</div>
+										</td>
+										<td>48</td>
+									</tr>
+									</tbody>
+							  </table>
+							</div>
+							<div class="col-sm-6">
+								<table class="table table-borderless">
+									<thead>
+									<tr>
+									 <td colspan="2" class="table-head">Completed ticket rating breakdown</td>
+									</tr>
+									</thead>
+									<tbody>
+									<tr>
+										<td scope="row">Hard</td>
+										<td>
+											<div class="complited-hard-progress">
+												<div class="complited-hard-progress-done" >
+		
+												</div>
+											  </div>
+										</td>
+										<td id="data">34</td>
+									</tr>
+									<tr>
+										<td scope="row">Average</td>
+										<td>
+											<div class="complited-average-progress">
+												<div class="complited-average-progress-done"></div>
+											</div>
+										</td>
+										<td>48</td>
+									</tr>
+									<tr>
+										<td scope="row">Easy</td>
+										<td>
+											<div class="complited-easy-progress">
+												<div class="complited-easy-progress-done"></div>
+											</div>
+										</td>
+										<td>80</td>
+									</tr>
+									</tbody>
+							  </table>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-sm-12 col-md-6">
+					<table class="table tk-breakdown table-striped table-bordered" >
+						<thead>
+						  <tr>
+							<th rowspan="2">Task Type</th>
+							<th colspan="4" class="tk-task-breakdown">Task Breakdown</th>
+
+						  </tr>
+						  <tr>
+							<th class="tk-task">Root</th>
+							<th class="tk-task">Integration</th>
+							<th class="tk-task">PE</th>
+							<th>Unclassified</th>
+						  </tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Team 1</td><td>65</td><td>72</td><td>41</td><td class="unclassified">52</td>
+							</tr>
+							<tr><td>Team 2</td><td>58</td><td>54</td><td>32</td><td class="unclassified">32</td></tr>
+							<tr><td>Team 2</td><td>58</td><td>54</td><td>32</td><td class="unclassified">32</td></tr>
+							<tr><td>Team 2</td><td>58</td><td>54</td><td>32</td><td class="unclassified">32</td></tr>
+							<tr><td>Team 2</td><td>58</td><td>54</td><td>32</td><td class="unclassified">32</td></tr>
+							<tr><td>Appointment</td><td>58</td><td>54</td><td>32</td><td class="unclassified">32</td></tr>
+
+						</tbody>
+					  </table>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="ra-header">
+					<h4 class="ra-title">Recent/Active Campaigns</h4>
+				</div>
+				<div class="col-lg-4 ra-column">
+					<table class="table table-hover table-borderless">
+						<thead>
+							<th>ELLPFI0063</th>
+							<td class="text-center">Recruitment</td>
+						</thead>
+						<tbody>
+							<tr>
+							<td></td>
+							<td>
+								<table class="table table-stripped">
+									<tr>
+										<td>Queued</td>
+										<td>
+											<div class="recruitment-que-progress">
+												<div class="recruitment-que-done"></div>
+											</div>
+										</td>
+										<td>462</td>
+									</tr>
+									<tr>
+										<td>Activated</td>
+										<td>
+											<div class="recruitment-activated-progress">
+												<div class="recruitment-activated-done"></div>
+											</div>
+										</td>
+										<td>462</td>
+									</tr>
+									<tr>
+										<td>Opt-out</td>
+										<td>
+											<div class="recruitment-opt-progress">
+												<div class="recruitment-opt-done"></div>
+											</div>
+										</td>
+										<td>462</td>
+									</tr>
+								</table>
+
+							</td>
+							</tr>
+							<tr>
+								<td>
+								<div class="main-fa">
+									<p><i class="fa fa-square" id="fa-square1" aria-hidden="true"></i><span class="fa-text">Open Issues</span></p>
+									<p><i class="fa fa-square" id="fa-square2" aria-hidden="true"></i><span class="fa-text">Resolved issues</span></p>
+								</div>
+								</td>
+								<td>
+									<div class="semi-donut-model-1 margin1"
+     								style="--percentage : 100; --fill: #2e2e2e ;">
+									 <div class="semi-donut-model-2 margin"
+									 style="--percentage : 30; --fill: #039BE5 ;">
+								
+								</div>
+									</div>
+									
+							</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+				<div class="col-lg-4 ra-column">
+
+					<table class="table table-hover table-borderless">
+						<thead>
+							<th>ELLPFI0069</th>
+							<td class="text-center">Recruitment</td>
+						</thead>
+						<tbody>
+							<tr>
+							<td></td>
+							<td>
+								<table class="table table-stripped">
+									<tr>
+										<td>Queued</td>
+										<td>
+											<div class="recruitment-que-progress">
+												<div class="recruitment-que-done"></div>
+											</div>
+										</td>
+										<td>462</td>
+									</tr>
+									<tr>
+										<td>Activated</td>
+										<td>
+											<div class="recruitment-activated-progress">
+												<div class="recruitment-activated-done"></div>
+											</div>
+										</td>
+										<td>462</td>
+									</tr>
+									<tr>
+										<td>Opt-out</td>
+										<td>
+											<div class="recruitment-opt-progress">
+												<div class="recruitment-opt-done"></div>
+											</div>
+										</td>
+										<td>462</td>
+									</tr>
+								</table>
+
+							</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<div class="semi-donut-model-1 margin1"
+     								style="--percentage : 100; --fill: #2e2e2e ;">
+									 <div class="semi-donut-model-2 margin"
+									 style="--percentage : 30; --fill: #039BE5 ;">
+								  
+								</div>
+									</div>
+									
+							</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+				<div class="col-lg-4 ra-column">
+
+					<table class="table table-hover table-borderless">
+						<thead>
+							<th>ELLKAR0002</th>
+							<td class="text-center">Recruitment</td>
+						</thead>
+						<tbody>
+							<tr>
+							<td></td>
+							<td>
+								<table class="table table-stripped">
+									<tr>
+										<td>Queued</td>
+										<td>
+											<div class="recruitment-que-progress">
+												<div class="recruitment-que-done"></div>
+											</div>
+										</td>
+										<td>462</td>
+									</tr>
+									<tr>
+										<td>Activated</td>
+										<td>
+											<div class="recruitment-activated-progress">
+												<div class="recruitment-activated-done"></div>
+											</div>
+										</td>
+										<td>462</td>
+									</tr>
+									<tr>
+										<td>Opt-out</td>
+										<td>
+											<div class="recruitment-opt-progress">
+												<div class="recruitment-opt-done"></div>
+											</div>
+										</td>
+										<td>462</td>
+									</tr>
+								</table>
+
+							</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>
+									<div class="semi-donut-model-1 margin1"
+     								style="--percentage : 100; --fill: #2e2e2e ;">
+									 <div class="semi-donut-model-2 margin"
+									 style="--percentage : 30; --fill: #039BE5 ;">
+								
+								</div>
+									</div>
+									
+							</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	</div>
+	
+<script src="/Static/js/dash.js"></script>
+	<script>
+	var bars = document.querySelectorAll('.meter > span');
+	console.clear();
+
+	setInterval(function(){
+		bars.forEach(function(bar){
+			var getWidth = parseFloat(bar.dataset.progress);
+			for(var i = 0; i < getWidth; i++) {
+				bar.style.width = i + '%';
+			}
+		});
+	}, 500);
+
+
+
+	</script>
+</body>
+</html>

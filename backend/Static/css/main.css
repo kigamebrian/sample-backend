@@ -1,0 +1,475 @@
+/*--
+	Author: kiggz
+
+--*/
+body{
+	margin:0;
+	padding:30px;
+	background:#fff;
+	font-family: 'Open Sans', sans-serif;
+ }
+
+ .header-text{
+    text-align: center;
+ }
+ .header-title {
+    font-weight: 300;
+    font-size: medium;
+    display: unset;
+    padding-bottom: 5px;
+    position: relative;
+    color:rgb(129, 129, 129) ;
+}
+.header-title:before{
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 1px;
+    bottom: 0;
+    left: -25%;
+    border-bottom: 2px solid rgb(129, 129, 129);
+}
+small, .small {
+    color: rgb(129, 129, 129);
+}
+.dashboard-main-text{
+  margin-left: 230px;
+  margin-right: 100px;
+}
+.nm-tickets{
+    color: #fff;
+    text-align: center;
+    display: table-cell;
+
+}
+.nm-tickets .inner{;
+    background-color: rgb(51, 50, 50);
+    padding: 16px;
+    height:6vw;
+}
+.nm-tickets .inner p {
+    margin-top: -1em;
+
+}
+.progress-circle{
+    position:relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: conic-gradient(#1e90ff 30deg, #ededed 0deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.progress-circle::after{
+    position:absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+}
+.value{
+    font-size: 13px;
+    font-weight:200;
+    color:black;
+    z-index: 9;
+}
+
+.text{
+    width: 100%;
+    text-align: center;
+}
+
+/*Backlog ticket rating breakdown*/
+/*hard progress*/
+
+.hard-progress {
+  background-color: #c1bebe;
+  border-radius: 20px;
+  position: relative;
+  margin: 10px 0;
+  height: 10px;
+  width: 160px;
+}
+
+.hard-progress-done {
+  background: linear-gradient(to left, #70f2f2, #409ea7);
+  box-shadow: 0 3px 3px -5px #19434f, 0 2px 5px #2c6873;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
+
+
+/*end of hard progress*/
+/*average progress*/
+.average-progress {
+  background-color: #c1bebe;
+  border-radius: 20px;
+  position: relative;
+  margin: 10px 0;
+  height: 10px;
+  width: 160px;
+}
+
+.average-progress-done {
+  background: linear-gradient(to left, #88eded, #7ee5ef);
+  box-shadow: 0 3px 3px -5px #488596, 0 2px 5px #6197a0;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
+
+/*end of average */
+
+/*easy progress*/
+.easy-progress {
+  background-color: #c1bebe;
+  border-radius: 20px;
+  position: relative;
+  margin: 10px 0;
+  height: 10px;
+  width: 160px;
+}
+
+.easy-progress-done {
+  background: linear-gradient(to left, #b2f3f3, #90e5ed);
+  box-shadow: 0 3px 3px -5px #6c9aa7, 0 2px 5px #7bb7c1;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+/*end of easy progress*/
+/*end Backlog ticket rating breakdown*/
+
+/*Completed ticket rating breakdown*/
+/*hard progress*/
+
+.complited-hard-progress {
+  background-color: #c1bebe;
+  border-radius: 20px;
+  position: relative;
+  margin: 10px 0;
+  height: 10px;
+  width: 160px;
+}
+
+.complited-hard-progress-done {
+  background: linear-gradient(to left, #70f2f2, #409ea7);
+  box-shadow: 0 3px 3px -5px #19434f, 0 2px 5px #2c6873;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
+
+
+/*end of hard progress*/
+/*average progress*/
+.complited-average-progress {
+  background-color: #c1bebe;
+  border-radius: 20px;
+  position: relative;
+  margin: 10px 0;
+  height: 10px;
+  width: 160px;
+}
+
+.complited-average-progress-done {
+  background: linear-gradient(to left, #88eded, #7ee5ef);
+  box-shadow: 0 3px 3px -5px #488596, 0 2px 5px #6197a0;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
+/*end of average */
+
+/*easy progress*/
+.complited-easy-progress {
+  background-color: #c1bebe;
+  border-radius: 20px;
+  position: relative;
+  margin: 10px 0;
+  height: 10px;
+  width: 160px;
+}
+
+.complited-easy-progress-done {
+  background: linear-gradient(to left, #b2f3f3, #90e5ed);
+  box-shadow: 0 3px 3px -5px #6c9aa7, 0 2px 5px #7bb7c1;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+/*end of easy progress*/
+
+/*end of Completed ticket rating breakdown*/
+
+/*    Active Campaigns   progressbar     */
+/*que region */
+.recruitment-que-progress {
+  background-color: #c1bebe;
+  border-radius: 20px;
+  position: relative;
+  margin: 10px 0;
+  height: 10px;
+  width: 120px;
+}
+
+.recruitment-que-done {
+  background: linear-gradient(to left, #70f2f2, #409ea7);
+  box-shadow: 0 3px 3px -5px #19434f, 0 2px 5px #2c6873;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
+/*end of que area*/
+/* activated progress bar */
+
+.recruitment-activated-progress {
+  background-color: #c1bebe;
+  border-radius: 20px;
+  position: relative;
+  margin: 10px 0;
+  height: 10px;
+  width: 120px;
+}
+
+.recruitment-activated-done {
+  background: linear-gradient(to left, #88eded, #7ee5ef);
+  box-shadow: 0 3px 3px -5px #488596, 0 2px 5px #6197a0;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+/*end of activated*/
+/* start of opt-out area */
+.recruitment-opt-progress {
+  background-color: #c1bebe;
+  border-radius: 20px;
+  position: relative;
+  margin: 10px 0;
+  height: 10px;
+  width: 120px;
+}
+
+.recruitment-opt-done {
+  background: linear-gradient(to left, #b2f3f3, #90e5ed);
+  box-shadow: 0 3px 3px -5px #6c9aa7, 0 2px 5px #7bb7c1;
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
+/*end of opt-out are */
+/*end of the area*/
+
+.Progress_Status {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    }
+
+.table-progressBar {
+    width: 40%;
+    height: 12px;
+    background-color: #03796e;
+    text-align: center;
+    line-height: 20px;
+    color: black;
+    border-radius: 10px;
+
+    }
+    .avarage_Status {
+        width: 100%;
+        background-color: #ddd;
+        border-radius: 10px;
+    }
+    .average-progressBar {
+        width: 70%;
+        height: 12px;
+        background-color: #5cecdd;
+        text-align: center;
+        line-height: 30px;
+        color: black;
+        border-radius: 10px;
+
+        }
+.table-head{
+    font-size: 13.5px;
+}
+.tk-task-breakdown{
+    background: #023e79;
+    color: #fff;
+    text-align: center;
+}
+.tk-task{
+    background:#74e6da ;
+}
+.tk-breakdown{
+    border-color:white
+}
+.unclassified{
+    background: rgb(242, 189, 109) !important;
+}
+
+
+
+.semi-donut-model-2 {
+  width: 150px;
+  height: 75px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 150px 150px 0 0;
+  overflow: hidden;
+  color: var(--fill);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+  }
+ .semi-donut-model-2:before,
+ .semi-donut-model-2:after {
+    content: "";
+    width: 150px;
+    height: 75px;
+    border: 20px solid var(--fill);
+    border-top: none;
+    position: absolute;
+    transform-origin: 50% 0% 0;
+    border-radius: 0 0 300px 300px;
+    box-sizing: border-box;
+    left: 0;
+    top: 100%;
+  }
+  .semi-donut-model-2:before {
+    border-color: rgba(0, 0, 0, 0.15);
+    transform: rotate(180deg);
+  }
+  .semi-donut-model-2:after{
+    z-index: 3;
+    animation: 1s fillGraphAnimation ease-in;
+    transform: rotate(calc(1deg * (var(--percentage) * 1.8)));
+  }
+  .margin1 {
+    margin: 25px;
+  }
+  
+  .semi-donut-model-1 {
+    width: 150px;
+    height: 80px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 120px 120px 0 0;
+    overflow: hidden;
+    color: var(--fill);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+    }
+   .semi-donut-model-1:before,
+   .semi-donut-model-1:after {
+      content: "";
+      width: 150px;
+      height: 80px;
+      border: 10px solid var(--fill);
+      border-top: none;
+      position: absolute;
+      transform-origin: 50% 0% 0;
+      border-radius: 0 0 300px 300px;
+      box-sizing: border-box;
+      left: 0;
+      top: 100%;
+    }
+    .semi-donut-model-1:before {
+      border-color: rgba(0, 0, 0, 0.15);
+      transform: rotate(180deg);
+    }
+    .semi-donut-model-1:after{
+      z-index: 3;
+      animation: 1s fillGraphAnimation ease-in;
+      transform: rotate(calc(1deg * (var(--percentage) * 1.8)));
+    }
+    #fa-square1 {
+        width: 15px;
+        height: 15px;
+        background: #2e2e2e;
+      }
+    .fa-text{
+        padding-top: 5px;
+        margin-left: 5px;
+      }
+    #fa-square2{
+        width: 15px;
+        height: 15px;
+        background: #039BE5;
+      }
+  
